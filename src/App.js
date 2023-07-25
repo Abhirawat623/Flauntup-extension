@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { images } from './database/images';
+import {quotes} from './database/qoutes'
 function App() {
+
+//to make wallpaperselection random
+const index= Math.floor(Math.random()*(images.length+2));
+const randomWallpaper = images[index].thumbnail;
+
+//to make qoutes selection random
+const randomQutes= quotes[index].quote;
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div className='wallpaper' style={{backgroundImage: `url("${randomWallpaper}")`}}>
+  
+       <h1 className='qoutes'>{randomQutes}</h1>
+
     </div>
+    
   );
 }
 
