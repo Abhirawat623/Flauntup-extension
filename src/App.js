@@ -1,11 +1,12 @@
 
 import './App.css';
 import { images } from './database/images';
-import {quotes} from './database/qoutes'
+import {quotes} from './database/qoutes';
+import { Home } from './page/home/home';
 function App() {
 
 //to make wallpaperselection random
-const index= Math.floor(Math.random()*(images.length+2));
+const index= Math.floor(Math.random()*(images.length));
 const randomWallpaper = images[index].thumbnail;
 
 //to make qoutes selection random
@@ -15,7 +16,7 @@ const randomQutes= quotes[index].quote;
     
     <div className='wallpaper' style={{backgroundImage: `url("${randomWallpaper}")`}}>
   
-       <h1 className='qoutes'>{randomQutes}</h1>
+     <Home/>
 
     </div>
     
