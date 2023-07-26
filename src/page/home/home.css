@@ -1,5 +1,36 @@
 .heading-1 {
     font-size: 3.5rem;
     line-height: 4rem;
+    color:var( --text-color-primary);
+  }
+  .home-container{
+    padding: 6.2rem;}
+
+  .main-heading
+  {
+     text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      rgb(84, 78, 95) 0%,
+      #ffffff 29%,
+      #ff0000 67%,
+      #0051ff 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 3rem;
   }
   
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
