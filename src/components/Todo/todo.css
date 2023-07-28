@@ -2,8 +2,8 @@
 
     border: none;
     background-color: transparent;
-    border-bottom: 3px solid var(--text-color-primary);
-    font-size: 28px;
+
+    font-size: 20px;
     color: var(--text-color-primary);
     text-align: center;
     width: 100%;
@@ -27,5 +27,5 @@ outline: none;
     width: 15% ;
     position: fixed;
     right:1rem;
-    bottom: 4rem;
+    bottom: 10rem;
 }

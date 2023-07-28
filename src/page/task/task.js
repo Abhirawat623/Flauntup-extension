@@ -3,7 +3,7 @@ import { useBrowser } from "../../Context/Browser-context";
 import { Fragment } from "react";
 import Todo from "../../components/Todo/todo";
 
-export const Task =()=>{
+export const Task =({data})=>{
 
 
 const {browserDispatch,time,message,name,task}= useBrowser();
@@ -129,7 +129,11 @@ const {browserDispatch,time,message,name,task}= useBrowser();
                  </div>
         
             </div>)}
-            
+            {/* qoutes */}
+              <div className="qoutes">{data}</div>
+
+
+
             {/* todo */}
 
 

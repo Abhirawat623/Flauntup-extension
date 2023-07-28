@@ -36,7 +36,7 @@ useEffect(()=>{
     
     <div className='wallpaper' style={{backgroundImage: `url("${randomWallpaper}")`}}>
 
-    { name? <Task/> : <Home/>}
+    { name? <Task data ={randomQutes}/> : <Home/>}
     </div>
     
   );
