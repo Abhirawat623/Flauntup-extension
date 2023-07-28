@@ -134,9 +134,9 @@ const {browserDispatch,time,message,name,task}= useBrowser();
 
 
             <div className="todo-bar">
-              {toDoOpen && <Todo/>}
+              {toDoOpen? <Todo/> :(<button className="todo-opener-btn heading-5" onClick={handkleToDoOpen}>To-Do</button>)}
               {/* if button clicked the stats is toggled */}
-              <button className="todo-opener-btn heading-5" onClick={handkleToDoOpen}>To-Do</button>
+              
              
             </div>
         </div>

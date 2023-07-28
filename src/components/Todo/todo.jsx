@@ -26,12 +26,12 @@ const[todo,setTodo]=useState();
 
  return(
 
-    <div className="todo-container">
+    <span className="todo-container">
         <div className="todo-input-container">
             <input className="todo-input" onChange={handleTodoChange} onKeyPress={handleToDoSubmit}/>
 
         </div>
-    </div>
+    </span>
  )
 }
 
