@@ -45,7 +45,7 @@
   }
   .cross::before, .cross::after {
     content: '';
-    width: 100%;
+    width: 90%;
     position: absolute;
     right: 0;
     top: 50%;
@@ -53,13 +53,13 @@
   }
   .cross::before {
     border-bottom: 2.5px solid rgb(255, 245, 245);
-    -webkit-transform: skewY(10deg);
-    transform: skewY(-10deg);
+    -webkit-transform: skewY(0deg);
+    transform: skewY(-0deg);
   }
   .cross::after {
     border-bottom: 2.5px solid rgb(255, 238, 238);
-    -webkit-transform: skewY(-10deg);
-    transform: skewY(10deg);
+    -webkit-transform: skewY(-2deg);
+    transform: skewY(2deg);
   }
   #user-task-check{
     height: 1.5rem;
@@ -81,18 +81,21 @@
     
    
   }
-  .utn{
+  .todo-opener-btn{
     display: inline-block;
-    padding: 24px 32px;
+    padding: 6px 24px;
     border: 0;
     text-decoration: none;
     border-radius: 15px;
     background-color: rgba(255,255,255,0.1);
-    border: 1px solid rgba(255,255,255,0.1);
-    backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
     color: rgba(255,255,255,0.8);
-    font-size: 14px;
+    font-size: 28px;
     letter-spacing: 2px;
     cursor: pointer;
     text-transform: uppercase;
+    position: fixed;
+    right:3rem;
+    bottom: 4rem;
   }

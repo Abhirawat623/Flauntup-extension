@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useBrowser } from "../../Context/Browser-context";
 import { Fragment } from "react";
+import Todo from "../../components/Todo/todo";
 
 export const Task =()=>{
 
@@ -8,9 +9,8 @@ export const Task =()=>{
 const {browserDispatch,time,message,name,task}= useBrowser();
 
 
-useEffect(()=>{
-    getCurrentTime()
-},[time])
+     useEffect(()=>{
+      getCurrentTime()},[time])
 
      const getCurrentTime=()=>{
 
@@ -41,59 +41,67 @@ useEffect(()=>{
      }     
      
      //prevent default for preventing after new task
-  const handleTaskSubmit=event=>{
-    event.preventDefault();
+       const handleTaskSubmit=event=>{
+        event.preventDefault();
   }
 
      //task
-     const handleTaskChange = event=>{
+        const handleTaskChange = event=>{
     
-         if(event.key==="Enter" && event.target.value.length>0){
-          browserDispatch({
+          if(event.key==="Enter" && event.target.value.length>0){
+            browserDispatch({
             type: "TASK",
             payload: event.target.value
           })
-        localStorage.setItem("task", event.target.value);
+          localStorage.setItem("task", event.target.value);
        
-        //used to store the date of the new task
-        localStorage.setItem("date", new Date().getDate());
+     //used to store the date of the new task
+           localStorage.setItem("date", new Date().getDate());
 
          }
 
      }
 
-//for new tasks
-useEffect(()=>{
-  browserDispatch({
-    type: "TASK",
-    payload: localStorage.getItem("task")
-  })
-})
+     //for new tasks
+       useEffect(()=>{
+       browserDispatch({
+       type: "TASK",
+       payload: localStorage.getItem("task")
+       })})
 
-  //for checkboxed tasks
-      const [isCheck, setIsCheck]=useState(false);
+     //for checkboxed tasks
+       const [isCheck, setIsCheck]=useState(false);
     
-   const handleCheckTask=(event)=>{
+       const handleCheckTask=(event)=>{
 
-    if(event.target.checked){
-        setIsCheck(isCheck=>!isCheck)
-    }
-    else{
-        setIsCheck(isCheck=>!isCheck)
-    }
+       if(event.target.checked){
+       setIsCheck(isCheck=>!isCheck)
+       }
+       else{
+       setIsCheck(isCheck=>!isCheck)
+       }
     
-   localStorage.setItem("checkTask", isCheck);
+       localStorage.setItem("checkTask", isCheck);
      
-   }
+       }
 
-  const handleTaskClear=()=>{
-   browserDispatch({
-    type:"CLEAR"
-   })
-   setIsCheck(false);
-   localStorage.removeItem("task");
-   localStorage.removeItem("checkTask")
-  }
+        const handleTaskClear=()=>{
+        browserDispatch({
+          type:"CLEAR"
+        })
+        setIsCheck(false);
+        localStorage.removeItem("task");
+        localStorage.removeItem("checkTask")
+        }
+    
+
+      //todo openner
+
+      const [toDoOpen,setToDoOpen]=useState(false);
+      
+      const handkleToDoOpen=()=>{
+        setToDoOpen(toDoOpen=>!toDoOpen);
+      }
 
     return(
         <div className="task-container  ">
@@ -122,6 +130,15 @@ useEffect(()=>{
         
             </div>)}
             
+            {/* todo */}
+
+
+            <div className="todo-bar">
+              {toDoOpen && <Todo/>}
+              {/* if button clicked the stats is toggled */}
+              <button className="todo-opener-btn heading-5" onClick={handkleToDoOpen}>To-Do</button>
+             
+            </div>
         </div>
     )
 }

@@ -3,6 +3,7 @@
 @import url("./styles/functional.css");
 @import url("./page/home/home.css");
 @import url('./page/task/task.css');
+@import url('./components/Todo/todo.css');
 /* @import url("./pages/Task/Task.css");
 @import url("./components/Weather/Weather.css"); */
 
