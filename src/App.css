@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
 @import url("./styles/functional.css");
 @import url("./page/home/home.css");
+@import url('./page/task/task.css');
 /* @import url("./pages/Task/Task.css");
 @import url("./components/Weather/Weather.css"); */
 

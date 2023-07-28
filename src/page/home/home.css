@@ -11,10 +11,10 @@
      text-transform: uppercase;
     background-image: linear-gradient(
       -225deg,
-      rgb(84, 78, 95) 0%,
+      rgb(157, 153, 163) 0%,
       #ffffff 29%,
-      #ff0000 67%,
-      #0051ff 100%
+      #757d85 67%,
+      #c2c3c4 100%
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -34,3 +34,16 @@
       background-position: 200% center;
     }
   }
+.name-input{
+    border: none;
+    background-color: transparent;
+    border-bottom: 3px solid var(--text-color-primary);
+    font-size: 3.5rem;
+    color: var(--text-color-primary);
+    text-align: center;
+    font-weight: 00;
+    width: 50%;
+}
+.name-input:focus{
+  outline: none;
+}
