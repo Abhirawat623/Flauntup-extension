@@ -5,16 +5,17 @@ const initialValue={
     name:"",
     time:"",
     message:"",
+    task:null
 }
 
 const BrowserContext = createContext(initialValue);
 
 const BrowserProvider=({children})=>{
 //  const [ state,dispatch]= useReducer(browserReducer,initialValue);
-const [{name,time,message} , browserDispatch]= useReducer(browserReducer, initialValue);
+const [{name,time,message,task} , browserDispatch]= useReducer(browserReducer, initialValue);
 
     return(
-    <BrowserContext.Provider value={ {name,time,message,browserDispatch}}>
+    <BrowserContext.Provider value={ {name,time,message,task,browserDispatch}}>
     {children}
     </BrowserContext.Provider>) 
 }

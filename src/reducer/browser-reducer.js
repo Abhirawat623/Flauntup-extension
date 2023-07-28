@@ -21,6 +21,16 @@ switch(type){
             message:payload
           }
 
+          case "TASK":
+            return{
+                ...state,
+                task:payload
+            }
+              case "CLEAR":
+                return{
+                  ...state,
+                  task:null
+                }
 
                      default: return state;
                                          }

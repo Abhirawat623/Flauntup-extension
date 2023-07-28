@@ -123,7 +123,7 @@ body {
 }
 
 .heading-1 {
-  font-size: 4rem;
+  font-size: 6rem;
   line-height: 1rem;
   color:var( --text-color-primary);
 }
@@ -142,12 +142,19 @@ body {
 
 .heading-4 {
   font-size: 3.8rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
   color: var(--text-color-primary);
 }
 
 .heading-5 {
-  font-size: 8px;
-  line-height: 1rem;
+  font-size: 2.6rem;
+  line-height: 2.5rem;
+  color: var(--text-color-primary);
+}
+
+.heading-6{
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  margin-top: 1rem;
   color: var(--text-color-primary);
 }
