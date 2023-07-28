@@ -15,6 +15,11 @@ switch(type){
           ...state,
           time: payload
         };
+        case "MESSAGE":
+          return{
+            ...state,
+            message:payload
+          }
 
 
                      default: return state;

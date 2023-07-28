@@ -1,10 +1,11 @@
 import { useEffect } from "react";
 import { useBrowser } from "../../Context/Browser-context";
+import { Fragment } from "react";
 
 export const Task =()=>{
 
 
-const {browserDispatch,time}= useBrowser();
+const {browserDispatch,time,message,name}= useBrowser();
 
 
 useEffect(()=>{
@@ -30,15 +31,27 @@ useEffect(()=>{
             type: "TIME",
             payload: currentTime
          });
-
+         //for time
+         browserDispatch({
+            type: "MESSAGE",
+            payload : hour >=0 && hour<=12 ? "Good Morning" : hour <= 12 && hour <=17 ? "Good Afternoon" : "Good Evening "
+         })
      }
 
 
 
     return(
         <div className="task-container ">
-            <span className="current-time">{time}</span>
-            
+            <span className="current-time heading-2">{time}</span>
+            <span className="message heading-3">{message} {name}</span>
+            <Fragment>
+                <span className=" focus heading-4">
+                    What's your focus today?
+                    <form>
+                        <input className="task-input" required />
+                    </form>
+                </span>
+            </Fragment>
         </div>
     )
 }

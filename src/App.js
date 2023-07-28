@@ -6,11 +6,14 @@ import { Home } from './page/home/home';
 import { useBrowser } from './Context/Browser-context';
 import {Task} from './page/task/task'
 import { useEffect } from 'react';
-function App() {
 
 //to make wallpaperselection random
 const index= Math.floor(Math.random()*(images.length));
 const randomWallpaper = images[index].thumbnail;
+
+
+function App() {
+
 
 //to make qoutes selection random
 const randomQutes= quotes[index].quote;

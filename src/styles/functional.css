@@ -122,23 +122,32 @@ body {
   padding: 8px;
 }
 
-
+.heading-1 {
+  font-size: 4rem;
+  line-height: 1rem;
+  color:var( --text-color-primary);
+}
 .heading-2 {
-  font-size: 2rem;
+  font-size: 5rem;
   line-height: 2.5rem;
+  color: var(--text-color-primary);
 }
 
 .heading-3 {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 4.2rem;
+  line-height: 1rem;
+  color: var(--text-color-primary);
+
 }
 
 .heading-4 {
-  font-size: 1rem;
+  font-size: 3.8rem;
   line-height: 1.5rem;
+  color: var(--text-color-primary);
 }
 
 .heading-5 {
   font-size: 8px;
   line-height: 1rem;
+  color: var(--text-color-primary);
 }
