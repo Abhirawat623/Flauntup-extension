@@ -64,10 +64,18 @@ const {browserDispatch,time,message,name,task}= useBrowser();
 
      //for new tasks
        useEffect(()=>{
+        const userTasks =localStorage.getItem("task");
        browserDispatch({
        type: "TASK",
-       payload: localStorage.getItem("task")
-       })})
+       payload: userTasks
+       })
+      if ( new Date().getDate()!==Number(localStorage.getItem("date"))){
+        localStorage.removeItem("task");
+        localStorage.removeItem("date");
+
+      }
+      
+      },[])
 
      //for checkboxed tasks
        const [isCheck, setIsCheck]=useState(false);
@@ -91,7 +99,9 @@ const {browserDispatch,time,message,name,task}= useBrowser();
         })
         setIsCheck(false);
         localStorage.removeItem("task");
+        localStorage.removeItem("checkTask");
         localStorage.removeItem("checkTask")
+        
         }
     
 
