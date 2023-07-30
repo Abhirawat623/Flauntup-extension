@@ -69,7 +69,9 @@ Start the server
 
 ## Screenshot
 ![Flaunt Up - Personal - Microsoft​ Edge 31-07-2023 01_43_49](https://github.com/Abhirawat623/Flauntup-extension/assets/131130116/a9a0c9cc-c55e-497a-9bb1-230e172b73f3)
+
 ![Flaunt Up - Personal - Microsoft​ Edge 31-07-2023 01_44_04](https://github.com/Abhirawat623/Flauntup-extension/assets/131130116/46a6f45f-f747-4705-b017-6014fdfc5be4)
+
 ![Flaunt Up - Personal - Microsoft​ Edge 31-07-2023 01_44_26](https://github.com/Abhirawat623/Flauntup-extension/assets/131130116/6b23e563-c4d5-47c6-bdb8-6d34c73c8956)
 
 
@@ -78,7 +80,10 @@ Start the server
 ##  APP Video
 
 
-https://github.com/Abhirawat623/Flauntup-extension/assets/131130116/f85df20b-942b-405d-98ac-b3a11057f2ba
+
+https://github.com/Abhirawat623/Flauntup-extension/assets/131130116/e68c5a9a-c778-4aa4-8214-7ae6e4d3be59
+
+
 
 
 
