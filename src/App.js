@@ -6,6 +6,9 @@ import { Home } from './page/home/home';
 import { useBrowser } from './Context/Browser-context';
 import {Task} from './page/task/task'
 import { useEffect } from 'react';
+import { Weather } from './components/weather/weather';
+
+
 
 //to make wallpaperselection random
 const index= Math.floor(Math.random()*(images.length));
@@ -32,11 +35,20 @@ useEffect(()=>{
   )
 },[])
 
+const handleReset=()=>{
+window.location.reload();
+localStorage.removeItem("task");
+localStorage.removeItem("name");
+localStorage.removeItem("todo");
+
+
+}
   return (
     
     <div className='wallpaper' style={{backgroundImage: `url("${randomWallpaper}")`}}>
-
-    { name? <Task data ={randomQutes}/> : <Home/>}
+   <Weather/>
+   <button className='reset-btn' onClick={handleReset}>Reset</button>
+    { name? <Task data ={randomQutes} /> : <Home/>}
     </div>
     
   );

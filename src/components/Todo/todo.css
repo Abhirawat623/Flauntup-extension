@@ -7,6 +7,7 @@
     color: var(--text-color-primary);
     text-align: center;
     width: 100%;
+    
     font-weight: 00;
 }
 .todo-input:focus{
