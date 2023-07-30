@@ -35,7 +35,6 @@ Focus bar
 
 ## Live Link
 
-https://extensry.netlify.app/
 
 
 
