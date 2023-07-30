@@ -1,25 +1,9 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
+  "manifest_version": 2,
+  "name":"Flaunt Up BE",
+  "author": "Abhishek Rawat",
+  "version" : "1.0",
+  "description": "Flauntup is a browser extension The BE includes the home page for name and then there will be a focus for your day after which you can also add some to-do to make your day effective includes weather information of your particular locality",
+  "chrome_url_overrides":{
+    "newtab": "index.html"
+  }}

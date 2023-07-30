@@ -4,11 +4,12 @@ import "./weather.css";
 
 export const Weather = () => {
   const [location, setLocation] = useState({
-    latitude: "",
-    longitude: "",
-    locality: "",
+     locality: "",
     temperature: "",
-    skyStatus: ""
+    skyStatus: "",
+     latitude: "",
+    longitude: ""
+  
   });
 
   navigator.geolocation.getCurrentPosition(function (position) {
