@@ -4,7 +4,8 @@
 @import url("./page/home/home.css");
 @import url('./page/task/task.css');
 @import url('./components/Todo/todo.css');
-/* @import url("./pages/Task/Task.css");
+
+/* 
 @import url("./components/Weather/Weather.css"); */
 
 .wallpaper{
@@ -12,6 +13,8 @@
     background-repeat: no-repeat;
     background-position: center center;
     height: 100vh;
+  
+   
 }
 .qoutes{
 color: var(--text-color-primary);

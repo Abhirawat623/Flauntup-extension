@@ -6,6 +6,8 @@
     flex-direction: column;
     gap: 3.5rem;
     padding: 10rem;
+    height: 100%;
+    width: 100%;
   }
 
   .main-heading

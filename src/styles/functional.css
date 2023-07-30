@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap");
 
 :root {
-  --text-color-primary: #f8fafc;
+  --text-color-primary: #ffffff;
   --todo-background: #0f172a;
-  --scrollbar-color: #a1a1aa;
+  --scrollbar-color: #9c9c9c;
 }
 
 * {

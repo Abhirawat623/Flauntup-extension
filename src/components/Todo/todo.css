@@ -8,8 +8,6 @@
     text-align: center;
     width: 100%;
     font-weight: 00;
-
-   
 }
 .todo-input:focus{
 outline: none;
@@ -18,20 +16,35 @@ outline: none;
 .todo-container{
     border: none;
     padding: 4px ;
-
     text-decoration: none;
     border-radius: 15px;
     background-color: rgba(255,255,255,0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(3px);
     width: 15% ;
     position: fixed;
     right:1rem;
-    bottom: 10rem;
+    bottom: 18rem;
+    max-height: 35vh;
+    overflow-y: auto;
+
 }
 
 .todo-list-heading{
     font-size: 1.3rem;
     line-height: 1.7rem;
-    color: var(--text-color-primary)
+    color: var(--text-color-primary);
+    object-fit: scale-down;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--text-color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-color);
 }

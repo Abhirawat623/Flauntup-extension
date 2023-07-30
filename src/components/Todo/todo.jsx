@@ -4,24 +4,29 @@ import { stringify, v4 as uuid } from "uuid";
 const Todo =()=>{
 
 //to do
-const[todo,setTodo]=useState();
+const[todo,setTodo]=useState("");
 
 //todo list
  const [todoList,setTodoList] =useState([]);
 
 
  const handleTodoChange = event=>{
-    setTodo(event.target.value);}
+
+    setTodo(event.target.value)
+   
+  ;}
     //written to do in the to do input
 
     const handleToDoSubmit= event=>{
-        if(event.key==="Enter"){
+        if(event.key==="Enter" && event.target.value.length>0){
             const updatedTodoList = [...todoList,{_id:uuid(),todo,isComplete:false}];
             setTodoList(updatedTodoList);
+           setTodo("");
             localStorage.setItem("todo",JSON.stringify(updatedTodoList));
-
-        }
         
+        }
+      
+       
     }
 
     //to ceck addedlist
@@ -30,9 +35,9 @@ const[todo,setTodo]=useState();
         const updatedTodoList = todoList.map(
             todo => todo._id  === todoId  ? { ...todo,isComplete: !todo.isComplete }: todo )
         setTodoList(updatedTodoList);
-        
+      
         localStorage.setItem("todo",JSON.stringify(updatedTodoList));
-        setTodo([]);
+       
     }
 
    
@@ -59,7 +64,7 @@ const[todo,setTodo]=useState();
 
     <span className="todo-container">
         <div className="todo-input-container">
-            <input className="todo-input" onChange={handleTodoChange} onKeyPress={handleToDoSubmit}/>
+            <input value={todo} className="todo-input" placeholder="type your To-Do" required onChange={handleTodoChange} onKeyPress={handleToDoSubmit}/>
 
         </div>
     
@@ -75,7 +80,7 @@ const[todo,setTodo]=useState();
             
                 <input id={_id } type="checkbox" className="user-task heading-5 " onChange={()=>handleTodoCheckTodoList(_id)} checked={isComplete}/>
                 <label for={_id} className={isComplete ? "todo-list-heading  cross d-flex " : "todo-list-heading "} >{todo}</label>
-                <button id="'user-task-check'" onClick={()=>handleTodoClear(_id)}>X</button>
+                <button className="user-task-clear-btn" onClick={()=>handleTodoClear(_id)}>X</button>
                 
 
                 {/*  <label for="user-task-check"  className={isCheck ? "heading-6  cross d-flex " : "heading-6 "} ><input className="user-task heading-5" 
