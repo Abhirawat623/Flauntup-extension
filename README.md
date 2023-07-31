@@ -11,9 +11,9 @@ To-do bar is also asigned on the right side of the app.
 There is a reset button, so another user can also switch the app simultaneously.
 
 
-## List of features
+# List of features
 
-Features of this version:
+## Features of this version:
 - Home Page
 # name of user, new wallpaper on every refresh
 - Focus bar
