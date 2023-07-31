@@ -14,10 +14,8 @@ There is a reset button, so another user can also switch the app simultaneously.
 # List of features
 
 ## Features of this version:
-- Home Page
-Name of user, new wallpaper on every refresh
-- Focus bar
-Focused task of the particular day can be asigned
+- Home Page-Name of user, new wallpaper on every refresh
+- Focus bar-Focused task of the particular day can be asigned
 
 ## Tech Stack
 
