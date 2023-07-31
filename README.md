@@ -16,6 +16,8 @@ There is a reset button, so another user can also switch the app simultaneously.
 ## Features of this version:
 - Home Page-Name of user, new wallpaper on every refresh
 - Focus bar-Focused task of the particular day can be asigned
+- Weather-Fetching api to know te temp and conditon of a locality
+- Date and Time-Storage of data a/c to the dates,next day everything refreshes inside the storage
 
 ## Tech Stack
 
