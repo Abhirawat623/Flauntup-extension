@@ -36,7 +36,9 @@ Focus bar
 ## Live Link
 https://beflauntup.vercel.app/
 
-
+### Addon add link 
+- This add-on only works in mozilla-firefox
+https://addons.mozilla.org/en-US/firefox/addon/flaunt-up-be/
 
 
 ## Run Locally
